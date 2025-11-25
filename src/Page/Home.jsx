@@ -11,7 +11,7 @@ const Home = () => {
             <hr  className='mb-5'/>
             <div className='grid grid-cols-3 gap-5'>
                 {
-                    // skillData.map(skill => <SkillCard key={skill.skillId} skill={skill}></SkillCard>)
+                    
                      skillData.map(skill => <TreeCard key={skill.skillId} skill={skill}></TreeCard>)
                 }
             </div>

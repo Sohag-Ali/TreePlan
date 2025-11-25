@@ -1,12 +1,31 @@
-import React from 'react';
-import { Link } from 'react-router';
+import React, { use } from 'react';
+import { Link, Navigate, useNavigate } from 'react-router';
 import Navbar from '../Components/Navbar';
-import {  ToastContainer } from 'react-toastify';
+import {  toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { AuthContext } from '../Provider/AuthProvider';
 
 
 const Login = () => {
+     const navigate = useNavigate();
+   const {signInUser, user, setUser} = use(AuthContext);
+    console.log(user);
+    const handleLogin = (e) => {
+        e.preventDefault();
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        console.log(email, password);
+        signInUser(email, password)
+        .then(result => {
+            setUser(result.user);
+             navigate('/')
+              toast('Login succesful');
 
+        })
+        .catch(error => {
+            toast('Login failed!!', error);
+        })
+    }
     return (
          <div>
             <div>
@@ -15,7 +34,7 @@ const Login = () => {
             <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
                 <div className="bg-white rounded-lg shadow-md p-8 w-full max-w-sm">
                     <h2 className="text-2xl font-bold text-center mb-6">Login</h2>
-                    <form className="flex flex-col gap-4">
+                    <form onSubmit={handleLogin}  className="flex flex-col gap-4">
                         <div>
                             <label className="block text-gray-700 mb-1 text-start">Email</label>
                             <input
