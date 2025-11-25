@@ -1,0 +1,82 @@
+[
+  {
+    "providerId": 1,
+    "providerName": "James Carter",
+    "profileImage": "https://images.unsplash.com/photo-1558203728-00f45181dd84?auto=format&fit=crop&w=200&q=80",
+    "topSkills": [
+      "Fiction Writing",
+      "Storytelling"
+    ],
+    "rating": 4.9
+  },
+  {
+    "providerId": 2,
+    "providerName": "Olivia Bennett",
+    "profileImage": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80",
+    "topSkills": [
+      "Romance Novels",
+      "Character Development"
+    ],
+    "rating": 4.8
+  },
+  {
+    "providerId": 3,
+    "providerName": "Dr. Ethan Wallace",
+    "profileImage": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
+    "topSkills": [
+      "Science Writing",
+      "Research Analysis"
+    ],
+    "rating": 4.7
+  },
+  {
+    "providerId": 4,
+    "providerName": "Ava Thompson",
+    "profileImage": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=200&q=80",
+    "topSkills": [
+      "Fantasy Worldbuilding",
+      "Creative Writing"
+    ],
+    "rating": 4.9
+  },
+  {
+    "providerId": 5,
+    "providerName": "Michael Roberts",
+    "profileImage": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=200&q=80",
+    "topSkills": [
+      "History Books",
+      "Cultural Research"
+    ],
+    "rating": 4.8
+  },
+  {
+    "providerId": 6,
+    "providerName": "Sophia Martinez",
+    "profileImage": "https://images.unsplash.com/photo-1524503033411-c9566986fc8f?auto=format&fit=crop&w=200&q=80",
+    "topSkills": [
+      "Children's Books",
+      "Illustrations"
+    ],
+    "rating": 4.7
+  },
+  {
+    "providerId": 7,
+    "providerName": "Daniel Foster",
+    "profileImage": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=200&q=80",
+    "topSkills": [
+      "Thriller Writing",
+      "Plot Twists"
+    ],
+    "rating": 4.9
+  },
+  {
+    "providerId": 8,
+    "providerName": "Emma Collins",
+    "profileImage": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=80",
+    "topSkills": [
+      "Self-Help Books",
+      "Motivational Writing"
+    ],
+    "rating": 4.8
+  }
+]

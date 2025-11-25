@@ -7,7 +7,7 @@ const Navbar = () => {
         <div>
              <nav className='flex justify-between items-center backdrop-blur-2xl rounded-2xl p-5'>
                 <div>
-                    <Link to='/'><h1 className='text-primary font-bold text-3xl typing-text'>Tree</h1></Link>
+                    <Link to='/'><h1 className='text-primary font-bold text-3xl typing-text'>Book Shop</h1></Link>
                 </div>
                 <div className='text-primary flex justify-center items-center gap-5'>
                     <NavLink className='font-bold hover:bg-secondary hover:text-white 

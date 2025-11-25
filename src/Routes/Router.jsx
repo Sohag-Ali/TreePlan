@@ -1,6 +1,8 @@
 import { createBrowserRouter } from "react-router";
 import HomeLayout from "../Layouts/HomeLayout";
 import Home from "../Page/Home";
+import Details from "../Page/Details";
+import Providers from "../Page/Providers";
 
 
 const router = createBrowserRouter([
@@ -12,16 +14,20 @@ const router = createBrowserRouter([
                 path: '/',
                 element: <Home></Home>,
                 loader: () => fetch('/skill.JSON'),
-                // loader: () => fetch('/skill.JSON'),
-                // children: [
-                //     {
-                //         path: '/',
-                //         element: <Providers></Providers>,
-                //         loader: () => fetch('/providers.JSON'),
-                //     }
-                // ]
+                children: [
+                    {
+                        path: '/',
+                        element: <Providers></Providers>,
+                        loader: () => fetch('/providers.JSON'),
+                    }
+                ]
             },
         ]
+    },
+    {
+        path: '/skillDetails/:id',
+        element: <Details></Details>,
+        loader: () => fetch('/skill.JSON'),
     },
   
     {

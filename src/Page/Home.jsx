@@ -7,7 +7,7 @@ const Home = () => {
         const skillData = useLoaderData();
     return (
         <div>
-            <h1 className='font-bold text-2xl my-3'>Popular Skills</h1>
+            <h1 className='font-bold text-2xl my-3'>Popular Books</h1>
             <hr  className='mb-5'/>
             <div className='grid grid-cols-3 gap-5'>
                 {
