@@ -1,6 +1,6 @@
 import React, { use, useState } from 'react';
 import Navbar from '../Components/Navbar';
-import { Link, useNavigate } from 'react-router';
+import { Link, useLocation, useNavigate } from 'react-router';
 import { toast } from 'react-toastify';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -8,14 +8,15 @@ import { AuthContext } from '../Provider/AuthProvider';
 
 const Register = () => {
     const [passValidation, setPassValidation] = useState('');
+    const location = useLocation();
     const navigate = useNavigate();
-       const { createUser, user, setUser, googleSignIn } = use(AuthContext);
+       const { createUser, user, setUser, googleSignIn,updateUser } = use(AuthContext);
     console.log(user);
 
     const handleRegister = (e)=> {
         e.preventDefault();
         const name = e.target.name.value;
-        const photoUrl = e.target.photo.value;
+        const photo = e.target.photo.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
 
@@ -37,8 +38,17 @@ const Register = () => {
 
         createUser(email, password)
             .then(result => {
-                setUser(result.user);
-                navigate('/')
+                const user = result.user;
+                updateUser({displayName: name, photoURL: photo}).then(()=>{
+                    setUser({...user,displayName: name, photoURL: photo});
+                })
+            .catch((error)=> {
+                console.log(error);
+                setUser(user);
+                
+            });
+
+                navigate(`${location.state?location.state : '/'}`)
             })
             .catch(error => {
                 return toast('Same User Found Register with different User Mail', error);
@@ -49,7 +59,7 @@ const Register = () => {
         googleSignIn()
         .then((result) => {
             setUser(result.user);
-            navigate('/');
+            navigate(`${location.state?location.state : '/'}`)
         })
         .catch(error => {
             console.log('error found from google Sign In', error);

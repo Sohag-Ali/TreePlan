@@ -1,5 +1,5 @@
-import React, { use } from 'react';
-import { Link, Navigate, useNavigate } from 'react-router';
+import React, { use, useState } from 'react';
+import { Link, Navigate, useLocation, useNavigate } from 'react-router';
 import Navbar from '../Components/Navbar';
 import {  toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -7,9 +7,12 @@ import { AuthContext } from '../Provider/AuthProvider';
 
 
 const Login = () => {
+    const [error,setError] = useState("");
      const navigate = useNavigate();
    const {signInUser, user, setUser} = use(AuthContext);
     console.log(user);
+    const location = useLocation();
+    // console.log(location);
     const handleLogin = (e) => {
         e.preventDefault();
         const email = e.target.email.value;
@@ -18,11 +21,13 @@ const Login = () => {
         signInUser(email, password)
         .then(result => {
             setUser(result.user);
-             navigate('/')
+             navigate(`${location.state?location.state : '/'}`)
               toast('Login succesful');
 
         })
         .catch(error => {
+            const errorCode = error.code;
+            setError(errorCode);
             toast('Login failed!!', error);
         })
     }
@@ -57,6 +62,7 @@ const Login = () => {
                             />
                         </div>
                         <p className='text-start'>Forget Password?</p>
+                        {error && <p className='text-red-500 text-xs'>Invalid password or username !!</p>}
                         <button
                             type="submit"
                             className="bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition-colors"
