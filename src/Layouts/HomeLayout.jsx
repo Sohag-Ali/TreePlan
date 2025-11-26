@@ -5,13 +5,15 @@ import Navbar from "../Components/Navbar";
 import Banner from "../Components/Banner";
 import { useEffect } from "react";
 import Aos from "aos";
-import { Outlet } from "react-router";
+import { Outlet, useNavigation } from "react-router";
+import Loading from "../Components/Loading";
 
 
  
 
 
 const HomeLayout = () => {
+    const {state}= useNavigation();
      useEffect(() => {
     Aos.init({
       duration: 1000, // animation duration in ms
@@ -36,7 +38,9 @@ const HomeLayout = () => {
             {/* Main Content */}
             <main className="flex-grow w-full">
                 <div className="max-w-[1340px] mx-auto px-4 py-8">
-                    <Outlet></Outlet>
+                    {state=="loading"? <Loading/> : <Outlet></Outlet> }
+                 
+                
                 </div>
             </main>
 

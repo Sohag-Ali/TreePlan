@@ -1,5 +1,5 @@
 import React, { use } from 'react';
-import userpng from '../assets/user.png'
+import userIcon from '../assets/user.png'
 import { Link, NavLink } from 'react-router';
 import { AuthContext } from '../Provider/AuthProvider';
 
@@ -19,10 +19,12 @@ const Navbar = () => {
                     <NavLink className='font-bold hover:bg-secondary hover:text-white 
                 hover:scale-105 transition-all duration-300 px-3 py-1 rounded-2xl hover:shadow-lg' to='/'>Home</NavLink>
                     <NavLink className='font-bold hover:bg-secondary hover:text-white 
+                hover:scale-105 transition-all duration-300 px-3 py-1 rounded-2xl hover:shadow-lg' to='/book'>Books</NavLink>
+                    <NavLink className='font-bold hover:bg-secondary hover:text-white 
                 hover:scale-105 transition-all duration-300 px-3 py-1 rounded-2xl hover:shadow-lg' to='/profile'>Profile</NavLink>
                 </div>
                  <div className='flex justify-center items-center gap-3'>
-                    <img className='max-w-7 rounded-[50%]' src={`&{user ? user.photoURL: userpng}`} alt="" />
+                    <img className='max-w-7 rounded-[50%]' src={`${user ? user.photoURL: userIcon}`} alt="" />
                     {
                         user ? <button 
                         className='btn text-white bg-primary' onClick={handleLogOut}>LogOut</button> : 

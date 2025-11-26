@@ -1,10 +1,12 @@
 import React from 'react';
-import { Outlet, useLoaderData } from 'react-router';
+import { Outlet, useLoaderData, useNavigate } from 'react-router';
 
 import TreeCard from './TreeCard';
 
 const Home = () => {
+    const navigate = useNavigate();
         const skillData = useLoaderData();
+        const popularData = skillData.slice(0,8);
     return (
         <div>
             <h1 className='font-bold text-2xl my-3'>Popular Books</h1>
@@ -12,9 +14,11 @@ const Home = () => {
             <div className='grid grid-cols-3 gap-5'>
                 {
                     
-                     skillData.map(skill => <TreeCard key={skill.skillId} skill={skill}></TreeCard>)
+                     popularData.map(skill => <TreeCard key={skill.skillId} skill={skill}></TreeCard>)
                 }
             </div>
+            <button onClick={() => navigate('/book')}className='overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl cursor-pointer btn my-6 md:my-8 bg-gradient-to-r from-[#3f51ff] to-[#8a00ff] text-white border-none w-full sm:w-auto px-8'>
+                Show All Books</button>
             <div>
                 <Outlet></Outlet>
             </div>
