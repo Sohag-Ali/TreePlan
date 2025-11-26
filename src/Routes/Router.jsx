@@ -13,6 +13,7 @@ import Tips from "../Page/Tips";
 
 
 
+
 const router = createBrowserRouter([
     {
         path: '/',
@@ -56,7 +57,9 @@ const router = createBrowserRouter([
      
     {
         path: '/profile',
-        element: <Profile></Profile>
+        element: <PrivateRoute>
+            <Profile></Profile>
+        </PrivateRoute>
     },
      {
         path: '/register',

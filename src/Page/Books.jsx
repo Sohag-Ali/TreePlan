@@ -29,22 +29,22 @@ if (loading) return <Loading></Loading>
         </div>
       </header> */}
       <div className="text-center mb-6 md:mb-10 px-4">
-        <h1 className="text-3xl sm:text-4xl font-bold">Our All Books</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold">Our All Plants</h1>
         <p className="text-gray-400 mt-2 text-sm sm:text-base">
-          Explore All Books on the Market developed by us. We code for Millions
+          Explore All Trees on the Market developed by us. We code for Millions
         </p>
       </div>
       <hr className="mb-5" />
       <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-6 px-4 md:px-0">
         <p className="font-bold text-sm md:text-base">
-          <span>({searchbook.length})</span> Books Found
+          <span>({searchbook.length})</span> Plants Found
         </p>
         <label className="input input-bordered w-full sm:w-auto max-w-xs">
           <input
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             type="search"
-            placeholder="Search Apps"
+            placeholder="Search Plants"
             className="w-full"
           />
         </label>
