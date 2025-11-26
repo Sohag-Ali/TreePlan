@@ -19,9 +19,9 @@ const Tips = () => {
           Simple and effective ways to keep your plants healthy.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-6 ">
           {["Watering", "Sunlight", "Fertilizing"].map((category) => (
-            <div key={category} className="p-6 bg-white rounded-xl shadow-md">
+            <div key={category} className="p-6 bg-white rounded-xl shadow-md hover:scale-105 transition-all duration-300 ">
               <h3 className="text-xl font-semibold mb-3 text-green-700">
                 {category} Tips
               </h3>
