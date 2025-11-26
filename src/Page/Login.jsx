@@ -33,9 +33,9 @@ const Login = () => {
     }
     return (
          <div>
-            <div>
+            {/* <div>
                 <Navbar></Navbar>
-            </div>
+            </div> */}
             <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
                 <div className="bg-white rounded-lg shadow-md p-8 w-full max-w-sm">
                     <h2 className="text-2xl font-bold text-center mb-6">Login</h2>

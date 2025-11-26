@@ -1,25 +1,33 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
 import TreeCard from "./TreeCard";
 import Navbar from "../Components/Navbar";
 import NotFound from "./NotFound";
+import Loading from "../Components/Loading";
+import useHooks from "../Hooks/useHooks";
 
 const Books = () => {
-  const skillData = useLoaderData();
+        const { apps, loading } = useHooks();
+//   const skillData = useLoaderData();
+
+
   const [search, setSearch] = useState("");
   const term = search.trim().toLowerCase();
   const searchbook = term
-    ? skillData.filter((app) => app.skillName.toLowerCase().includes(term))
-    : skillData;
+    ? apps.filter((app) => app.skillName.toLowerCase().includes(term))
+    : apps;
+if (loading) return <Loading></Loading>
+    if (!apps) return <NotFound></NotFound>
+    
   return (
     <div>
-      <header>
+      {/* <header>
         <div className="max-w-[1340px] mx-auto px-4">
           <nav className="h-fit sticky top-0 z-50 left-0 py-5">
             <Navbar></Navbar>
           </nav>
         </div>
-      </header>
+      </header> */}
       <div className="text-center mb-6 md:mb-10 px-4">
         <h1 className="text-3xl sm:text-4xl font-bold">Our All Books</h1>
         <p className="text-gray-400 mt-2 text-sm sm:text-base">

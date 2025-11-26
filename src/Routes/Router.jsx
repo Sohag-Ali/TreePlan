@@ -30,21 +30,22 @@ const router = createBrowserRouter([
                     }
                 ]
             },
-        ]
-    },
-    {
+            {
         path: '/skillDetails/:id',
         element: <PrivateRoute>
             <Details></Details>
         </PrivateRoute>,
-        loader: () => fetch('/skill.JSON'),
-         hydrateFallbackElement: <Loading></Loading>,
+        loader: async () => {
+    const res = await fetch('/skill.JSON');  
+    const data = await res.json();          
+    return data;                            
+  },
     },
      {
         path: '/book',
         element: <Books></Books>,
-         loader: () => fetch('/skill.JSON'),
-         hydrateFallbackElement: <Loading></Loading>,
+        //  loader: () => fetch('/skill.JSON'),
+        //  hydrateFallbackElement: <Loading></Loading>,
     },
      
     {
@@ -59,6 +60,9 @@ const router = createBrowserRouter([
         path: '/login',
         element: <Login></Login>
     },
+        ]
+    },
+    
   
     {
         path: '*',

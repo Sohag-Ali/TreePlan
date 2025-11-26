@@ -55,9 +55,9 @@ const Details = () => {
     };
     return (
         <div className="min-h-screen flex flex-col bg-gray-50">
-            <header className="sticky top-0 z-50 backdrop-blur-md shadow-sm">
+            {/* <header className="sticky top-0 z-50 backdrop-blur-md shadow-sm">
                 <Navbar></Navbar>
-            </header>
+            </header> */}
             <section
                 className="relative w-full h-[400px] flex flex-col items-center justify-center text-center text-white overflow-hidden"
                 style={{

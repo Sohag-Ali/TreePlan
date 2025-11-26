@@ -1,7 +1,9 @@
 import React from 'react';
-import { Outlet, useLoaderData, useNavigate } from 'react-router';
+import { Outlet, useLoaderData, useNavigate } from 'react-router-dom';
 
 import TreeCard from './TreeCard';
+import Banner from '../Components/Banner';
+
 
 const Home = () => {
     const navigate = useNavigate();
@@ -9,6 +11,9 @@ const Home = () => {
         const popularData = skillData.slice(0,8);
     return (
         <div>
+             <div className='my-3' data-aos='zoom-in' data-aos-delay="200" >
+                       <Banner></Banner>
+                    </div>
             <h1 className='font-bold text-2xl my-3'>Popular Books</h1>
             <hr  className='mb-5'/>
             <div className='grid grid-cols-3 gap-5'>

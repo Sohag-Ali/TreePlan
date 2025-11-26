@@ -29,9 +29,7 @@ const HomeLayout = () => {
                     <nav >
                         <Navbar></Navbar>
                     </nav>
-                    <div className='my-3' data-aos='zoom-in' data-aos-delay="200" >
-                       <Banner></Banner>
-                    </div>
+                   
                 </div>
             </header>
 
