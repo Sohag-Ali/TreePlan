@@ -10,6 +10,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Login = () => {
     const [error,setError] = useState("");
+    // const [user , setUser] = useState({});
      const navigate = useNavigate();
      const [show,setShow] = useState(false);
    const {signInUser, user, setUser, signInWithGoogle} = use(AuthContext);
@@ -40,6 +41,7 @@ const Login = () => {
         .then((result) => {
             setUser(result.user);
             navigate(`${location.state?location.state : '/'}`)
+            toast('Login succesful');
         })
         .catch(error => {
             console.log('error found from google Sign In', error);
@@ -105,7 +107,7 @@ const Login = () => {
                     </p>
                 </div>
             </div>
-            <ToastContainer />
+             <ToastContainer position="top-center" />
         </div>
     );
 };

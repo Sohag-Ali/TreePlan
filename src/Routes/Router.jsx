@@ -10,6 +10,9 @@ import PrivateRoute from "../Provider/PrivateRoute";
 import Loading from "../Components/Loading";
 import Books from "../Page/Books";
 import Tips from "../Page/Tips";
+import ErrorPage from "../Page/ErrorPage";
+import About from "../Page/About";
+import Contact from "../Page/Contact";
 
 
 
@@ -69,13 +72,22 @@ const router = createBrowserRouter([
         path: '/login',
         element: <Login></Login>
     },
+    
         ]
+    },
+    {
+        path: '/about',
+        element: <About></About>
+    },
+    {
+        path: '/contact',
+        element: <Contact></Contact>
     },
     
   
     {
         path: '*',
-        element: <h2>Error 404</h2>
+        element: <ErrorPage></ErrorPage>
     }
 ])
 export default router;

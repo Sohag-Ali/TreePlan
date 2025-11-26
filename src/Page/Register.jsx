@@ -199,7 +199,7 @@ const Register = () => {
           </p>
         </div>
       </div>
-      <ToastContainer />
+      <ToastContainer position="top-center" />
     </div>
   );
 };
