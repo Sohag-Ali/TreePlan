@@ -80,7 +80,7 @@ const Login = () => {
                                 {show ? <FaEyeSlash size={18} /> : <FaEye size={18} />}
                             </span>
                         </div>
-                        <p className='text-start'>Forget Password?</p>
+                        <p className='text-start hover:text-red-400'>Forget Password?</p>
                         {error && <p className='text-red-500 text-xs'>Invalid password or username !!</p>}
                         <button
                             type="submit"

@@ -9,7 +9,7 @@ import Tips from './Tips';
 const Home = () => {
     const navigate = useNavigate();
         const treeData = useLoaderData();
-        const popularData = treeData.slice(0,8);
+        const popularData = treeData.slice(0,9);
     return (
         <div >
              <div className='my-3' data-aos='zoom-in' data-aos-delay="200" >

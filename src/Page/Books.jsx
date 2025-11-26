@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { useLoaderData } from "react-router";
+import React, { useState } from "react";
 import TreeCard from "./TreeCard";
 import Navbar from "../Components/Navbar";
 import NotFound from "./NotFound";
@@ -14,7 +13,7 @@ const Books = () => {
   const [search, setSearch] = useState("");
   const term = search.trim().toLowerCase();
   const searchbook = term
-    ? trees.filter((tree) => tree.skillName.toLowerCase().includes(term))
+    ? trees.filter((tree) => tree.plantName.toLowerCase().includes(term))
     : trees;
 if (loading) return <Loading></Loading>
     if (!trees) return <NotFound></NotFound>

@@ -43,7 +43,7 @@ a.active {
 .typing-text {
   overflow: hidden;       /* hide the overflowing text */
   white-space: nowrap;    /* prevent wrapping */
-  border-right: 3px solid white; /* cursor */
+  border-right: 3px solid rgb(24, 145, 13); /* cursor */
   width: 0;
   animation: 
     typing 2s steps(12, end) forwards, /* type letters */

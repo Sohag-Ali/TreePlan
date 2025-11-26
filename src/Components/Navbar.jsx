@@ -17,7 +17,7 @@ const Navbar = () => {
         {/* Logo */}
         <div>
           <Link to="/">
-            <h1 className="text-emerald-600 font-bold text-3xl typing-text">
+            <h1 className="text-emerald-600 font-bold text-3xl typing-text ">
               🌿GreenNest
             </h1>
           </Link>
