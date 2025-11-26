@@ -22,7 +22,7 @@ const HomeLayout = () => {
     });
     }, []);
     return (
-        <div className="min-h-screen flex flex-col bg-base-100">
+        <div className="min-h-screen flex flex-col bg-green-50">
             {/* Header */}
             <header>
                 <div className="max-w-[1340px] mx-auto px-4">

@@ -8,8 +8,9 @@
     "availableStock": 10,
     "careLevel": "Easy",
     "description": "A hardy plant that purifies indoor air and thrives in low light.",
-    "image": "https://i.postimg.cc/example1.png",
-    "providerName": "UrbanGreen Studio"
+    "image": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1400&q=80",
+    "providerName": "UrbanGreen Studio",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 2,
@@ -19,9 +20,10 @@
     "rating": 4.7,
     "availableStock": 20,
     "careLevel": "Easy",
-    "description": "Succulent plant known for its healing gel and low maintenance.",
-    "image": "https://i.postimg.cc/example2.png",
-    "providerName": "UrbanGreen Studio"
+    "description": "Beautiful flowering plant that reduces indoor toxins.",
+    "image": "https://potsforplants.ph/cdn/shop/products/yucca-plant-649302.jpg?v=1748253894",
+    "providerName": "UrbanGreen Studio",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 3,
@@ -32,8 +34,9 @@
     "availableStock": 12,
     "careLevel": "Medium",
     "description": "Beautiful flowering plant that reduces indoor toxins.",
-    "image": "https://i.postimg.cc/example3.png",
-    "providerName": "GreenLeaf Point"
+    "image": "https://www.thespruce.com/thmb/ZZgnRKHyClJ0iH0hMXE154Skyhs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/get-to-know-the-feng-shui-money-plant-1275013-6-a11a86b1c5664f28a1848a5089b8aaed.jpg",
+    "providerName": "GreenLeaf Point",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 4,
@@ -44,8 +47,9 @@
     "availableStock": 18,
     "careLevel": "Easy",
     "description": "Fast-growing plant with arching green and white leaves.",
-    "image": "https://i.postimg.cc/example4.png",
-    "providerName": "GreenLeaf Point"
+    "image": "https://www.realsimple.com/thmb/hKmZA2j9Tf5x6HHjPfqtZMiFr8s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1357717927-33a98b53f0604c09b6679bd3cfac23a4.jpg",
+    "providerName": "GreenLeaf Point",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 5,
@@ -56,8 +60,9 @@
     "availableStock": 8,
     "careLevel": "Medium",
     "description": "Glossy dark leaves with strong air-purifying ability.",
-    "image": "https://i.postimg.cc/example5.png",
-    "providerName": "UrbanGreen Studio"
+    "image": "https://cnr.ncsu.edu/news/wp-content/uploads/sites/10/2023/06/06132023-tree-planting-istock-twitter.png",
+    "providerName": "UrbanGreen Studio",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 6,
@@ -68,8 +73,9 @@
     "availableStock": 15,
     "careLevel": "Easy",
     "description": "Thrives in low light and requires very little water.",
-    "image": "https://i.postimg.cc/example6.png",
-    "providerName": "Leaf & Root Garden"
+    "image": "https://hips.hearstapps.com/hmg-prod/images/money-tree-plant-royalty-free-image-1726508639.jpg?crop=0.88896xw:1xh;center,top&resize=1200:*",
+    "providerName": "Leaf & Root Garden",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 7,
@@ -80,8 +86,9 @@
     "availableStock": 7,
     "careLevel": "Medium",
     "description": "Lush tropical palm ideal for large indoor spaces.",
-    "image": "https://i.postimg.cc/example7.png",
-    "providerName": "Leaf & Root Garden"
+    "image": "https://cloudfrontgharpediabucket.gharpedia.com/uploads/2023/01/Weeping-Fig-Ficus-Benjamina-12-1408030001-819x1024.jpg",
+    "providerName": "Leaf & Root Garden",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 8,
@@ -92,8 +99,9 @@
     "availableStock": 30,
     "careLevel": "Easy",
     "description": "Popular vine believed to bring positivity and growth.",
-    "image": "https://i.postimg.cc/example8.png",
-    "providerName": "GreenNest Hub"
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc-nzSuqTxumWUB-xVR26COBXIWWeBA2GJMFVVH-_bhjZNbxwOi9iyI8Lb7i1ZIOlxqvs&usqp=CAU",
+    "providerName": "GreenNest Hub",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 9,
@@ -104,8 +112,9 @@
     "availableStock": 14,
     "careLevel": "Easy",
     "description": "A compact succulent symbolizing good luck and fortune.",
-    "image": "https://i.postimg.cc/example9.png",
-    "providerName": "GreenNest Hub"
+    "image": "https://www.ornamental-trees.co.uk/cdn/shop/files/acer-palmatum-osakazuki-tree-p265-13354_image.jpg?v=1731683661&width=533",
+    "providerName": "GreenNest Hub",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 10,
@@ -116,8 +125,9 @@
     "availableStock": 5,
     "careLevel": "Hard",
     "description": "A trendy indoor tree with big violin-shaped leaves.",
-    "image": "https://i.postimg.cc/example10.png",
-    "providerName": "UrbanLeaf Decor"
+    "image": "https://cnr.ncsu.edu/news/wp-content/uploads/sites/10/2023/06/06132023-tree-planting-istock-twitter.png",
+    "providerName": "UrbanLeaf Decor",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 11,
@@ -128,8 +138,9 @@
     "availableStock": 22,
     "careLevel": "Medium",
     "description": "A beautiful trailing plant that grows vigorously.",
-    "image": "https://i.postimg.cc/example11.png",
-    "providerName": "UrbanLeaf Decor"
+    "image": "https://hips.hearstapps.com/hmg-prod/images/bonsai-bonsai-premna-royalty-free-image-1733348240.jpg?crop=0.593xw:0.889xh;0.0801xw,0.111xh&resize=640:*",
+    "providerName": "UrbanLeaf Decor",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 12,
@@ -140,8 +151,9 @@
     "availableStock": 11,
     "careLevel": "Medium",
     "description": "Known for its stunning patterned leaves.",
-    "image": "https://i.postimg.cc/example12.png",
-    "providerName": "Leaf & Root Garden"
+    "image": "https://hips.hearstapps.com/hmg-prod/images/money-tree-plant-royalty-free-image-1726508639.jpg?crop=0.88896xw:1xh;center,top&resize=1200:*",
+    "providerName": "Leaf & Root Garden",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 13,
@@ -152,8 +164,9 @@
     "availableStock": 16,
     "careLevel": "Medium",
     "description": "Lush green fern that thrives in humidity.",
-    "image": "https://i.postimg.cc/example13.png",
-    "providerName": "UrbanGreen Studio"
+    "image": "https://myperfectplants.com/cdn/shop/files/WindmillPalm_1_900x.jpg?v=1701870297",
+    "providerName": "UrbanGreen Studio",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 14,
@@ -164,8 +177,9 @@
     "availableStock": 25,
     "careLevel": "Easy",
     "description": "A fast-growing vine with golden variegated leaves.",
-    "image": "https://i.postimg.cc/example14.png",
-    "providerName": "GreenNest Hub"
+    "image": "https://cloudfrontgharpediabucket.gharpedia.com/uploads/2023/01/Weeping-Fig-Ficus-Benjamina-12-1408030001-819x1024.jpg",
+    "providerName": "GreenNest Hub",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 15,
@@ -176,8 +190,9 @@
     "availableStock": 13,
     "careLevel": "Easy",
     "description": "Colorful leaves and excellent tolerance to low light.",
-    "image": "https://i.postimg.cc/example15.png",
-    "providerName": "UrbanLeaf Decor"
+    "image": "https://cnr.ncsu.edu/news/wp-content/uploads/sites/10/2023/06/06132023-tree-planting-istock-twitter.png",
+    "providerName": "UrbanLeaf Decor",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 16,
@@ -188,8 +203,9 @@
     "availableStock": 9,
     "careLevel": "Medium",
     "description": "Elegant palm that adds a tropical touch indoors.",
-    "image": "https://i.postimg.cc/example16.png",
-    "providerName": "Leaf & Root Garden"
+    "image": "https://plantura.garden/uk/wp-content/uploads/sites/2/2022/03/strawberry-tree-fruits-1024x683.jpg?x54327",
+    "providerName": "Leaf & Root Garden",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 17,
@@ -200,8 +216,9 @@
     "availableStock": 40,
     "careLevel": "Easy",
     "description": "A set of assorted low-maintenance succulents.",
-    "image": "https://i.postimg.cc/example17.png",
-    "providerName": "UrbanGreen Studio"
+    "image": "https://myperfectplants.com/cdn/shop/files/WindmillPalm_1_900x.jpg?v=1701870297",
+    "providerName": "UrbanGreen Studio",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 18,
@@ -212,8 +229,9 @@
     "availableStock": 12,
     "careLevel": "Medium",
     "description": "Fragrant purple flowers with calming aroma.",
-    "image": "https://i.postimg.cc/example18.png",
-    "providerName": "GreenNest Hub"
+    "image": "https://hips.hearstapps.com/hmg-prod/images/money-tree-plant-royalty-free-image-1726508639.jpg?crop=0.88896xw:1xh;center,top&resize=1200:*",
+    "providerName": "GreenNest Hub",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 19,
@@ -224,8 +242,9 @@
     "availableStock": 35,
     "careLevel": "Easy",
     "description": "A fast-growing herb with refreshing aroma.",
-    "image": "https://i.postimg.cc/example19.png",
-    "providerName": "GreenNest Hub"
+    "image": "https://media.architecturaldigest.com/photos/63bdb4060a1205c7301b29db/3:4/w_748%2Cc_limit/live-ficus-elastica-rubber-plant-in-white-ceramic-pot-6.jpg",
+    "providerName": "GreenNest Hub",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 20,
@@ -236,8 +255,9 @@
     "availableStock": 28,
     "careLevel": "Easy",
     "description": "Aromatic herb used in cooking and as decoration.",
-    "image": "https://i.postimg.cc/example20.png",
-    "providerName": "GreenLeaf Point"
+    "image": "https://cnr.ncsu.edu/news/wp-content/uploads/sites/10/2023/06/06132023-tree-planting-istock-twitter.png",
+    "providerName": "GreenLeaf Point",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 21,
@@ -248,8 +268,9 @@
     "availableStock": 50,
     "careLevel": "Easy",
     "description": "Tiny cactus species needing minimal care.",
-    "image": "https://i.postimg.cc/example21.png",
-    "providerName": "UrbanGreen Studio"
+    "image": "https://cloudfrontgharpediabucket.gharpedia.com/uploads/2023/01/Weeping-Fig-Ficus-Benjamina-12-1408030001-819x1024.jpg",
+    "providerName": "UrbanGreen Studio",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 22,
@@ -260,8 +281,9 @@
     "availableStock": 10,
     "careLevel": "Hard",
     "description": "Elegant purple flowers that bloom for long periods.",
-    "image": "https://i.postimg.cc/example22.png",
-    "providerName": "UrbanLeaf Decor"
+    "image": "https://nurserynisarga.in/wp-content/uploads/2024/07/Egg-Fruit-.webp",
+    "providerName": "UrbanLeaf Decor",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 23,
@@ -272,8 +294,9 @@
     "availableStock": 30,
     "careLevel": "Easy",
     "description": "Aromatic herb perfect for cooking and indoor gardens.",
-    "image": "https://i.postimg.cc/example23.png",
-    "providerName": "Leaf & Root Garden"
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDIQaDstL7TiKzjlBmPYqTiuDBY9G5hip3jQ&s",
+    "providerName": "Leaf & Root Garden",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 24,
@@ -284,8 +307,9 @@
     "availableStock": 14,
     "careLevel": "Medium",
     "description": "Bright colorful leaves that enhance indoor spaces.",
-    "image": "https://i.postimg.cc/example24.png",
-    "providerName": "GreenLeaf Point"
+    "image": "https://hips.hearstapps.com/hmg-prod/images/money-tree-plant-royalty-free-image-1726508639.jpg?crop=0.88896xw:1xh;center,top&resize=1200:*",
+    "providerName": "GreenLeaf Point",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 25,
@@ -296,8 +320,9 @@
     "availableStock": 19,
     "careLevel": "Easy",
     "description": "A heart-shaped trailing plant perfect for shelves.",
-    "image": "https://i.postimg.cc/example25.png",
-    "providerName": "UrbanGreen Studio"
+    "image": "https://cnr.ncsu.edu/news/wp-content/uploads/sites/10/2023/06/06132023-tree-planting-istock-twitter.png",
+    "providerName": "UrbanGreen Studio",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 26,
@@ -308,8 +333,9 @@
     "availableStock": 12,
     "careLevel": "Medium",
     "description": "Tall slender plant adding elegance to any room.",
-    "image": "https://i.postimg.cc/example26.png",
-    "providerName": "GreenNest Hub"
+    "image": "https://media.architecturaldigest.com/photos/63bdb4060a1205c7301b29db/3:4/w_748%2Cc_limit/live-ficus-elastica-rubber-plant-in-white-ceramic-pot-6.jpg",
+    "providerName": "GreenNest Hub",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 27,
@@ -320,8 +346,9 @@
     "availableStock": 9,
     "careLevel": "Medium",
     "description": "Glossy red flowers that bloom almost year-round.",
-    "image": "https://i.postimg.cc/example27.png",
-    "providerName": "UrbanLeaf Decor"
+    "image": "https://cnr.ncsu.edu/news/wp-content/uploads/sites/10/2023/06/06132023-tree-planting-istock-twitter.png",
+    "providerName": "UrbanLeaf Decor",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 28,
@@ -332,8 +359,9 @@
     "availableStock": 18,
     "careLevel": "Easy",
     "description": "Soothing herb known for its calming properties.",
-    "image": "https://i.postimg.cc/example28.png",
-    "providerName": "GreenLeaf Point"
+    "image": "https://cloudfrontgharpediabucket.gharpedia.com/uploads/2023/01/Weeping-Fig-Ficus-Benjamina-12-1408030001-819x1024.jpg",
+    "providerName": "GreenLeaf Point",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 29,
@@ -344,8 +372,9 @@
     "availableStock": 20,
     "careLevel": "Easy",
     "description": "Bright multicolored leaves that add vibrant décor.",
-    "image": "https://i.postimg.cc/example29.png",
-    "providerName": "Leaf & Root Garden"
+    "image": "https://hips.hearstapps.com/hmg-prod/images/money-tree-plant-royalty-free-image-1726508639.jpg?crop=0.88896xw:1xh;center,top&resize=1200:*",
+    "providerName": "Leaf & Root Garden",
+    "providerEmail": "sohag2879@gmail.com"
   },
   {
     "plantId": 30,
@@ -356,7 +385,8 @@
     "availableStock": 11,
     "careLevel": "Easy",
     "description": "Popular red-toned indoor plant with air-cleaning ability.",
-    "image": "https://i.postimg.cc/example30.png",
-    "providerName": "UrbanGreen Studio"
+    "image": "https://cloudfrontgharpediabucket.gharpedia.com/uploads/2023/01/Weeping-Fig-Ficus-Benjamina-12-1408030001-819x1024.jpg",
+    "providerName": "UrbanGreen Studio",
+    "providerEmail": "sohag2879@gmail.com"
   }
 ]

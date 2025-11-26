@@ -4,27 +4,27 @@ import React from "react";
 import { NavLink } from "react-router";
 
 
-const TreeCard = ({skill}) => {
+const TreeCard = ({tree}) => {
     return (
-       <div className="bg-white shadow-sm rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col" data-aos='zoom-in' data-aos-delay="200">
+       <div className="bg-base-100 shadow-sm rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col" data-aos='zoom-in' data-aos-delay="200">
             {/* Image */}
             <img
-                src={skill.image}
-                alt={skill.skillName}
+                src={tree.image}
+                alt={tree.plantName}
                 className="h-48 w-full object-cover"
             />
 
             {/* Card Content */}
             <div className="p-4 flex flex-col flex-grow">
                 {/* Skill Name */}
-                <h2 className="animate__animated animate-pulse text-xl font-semibold mb-2">{skill.skillName}</h2>
+                <h2 className="animate__animated animate-pulse text-xl font-semibold mb-2">{tree.plantName}</h2>
 
                 {/* Rating and Price */}
                 <div className="flex items-center justify-between mb-4">
                     {/* Rating */}
                     <div className="flex items-center">
                         <span className="flex text-yellow-400 mr-2">
-                            {Array.from({ length: Math.floor(skill.rating) }).map((_, i) => (
+                            {Array.from({ length: Math.floor(tree.rating) }).map((_, i) => (
                                 <svg
                                     key={i}
                                     className="w-4 h-4 fill-current"
@@ -34,15 +34,15 @@ const TreeCard = ({skill}) => {
                                 </svg>
                             ))}
                         </span>
-                        <span className="text-gray-600">{skill.rating.toFixed(1)}</span>
+                        <span className="text-gray-600">{tree.rating.toFixed(1)}</span>
                     </div>
 
                     {/* Price */}
-                    <p className="text-gray-700 font-bold text-xl">${skill.price}</p>
+                    <p className="text-gray-700 font-bold text-xl">${tree.price}</p>
                 </div>
 
                 {/* View Details Button */}
-                <NavLink to={`/skillDetails/${skill.skillId}`} className="mt-auto bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
+                <NavLink to={`/skillDetails/${tree.plantId}`} className="mt-auto bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
                     View Details
                 </NavLink>
             </div>

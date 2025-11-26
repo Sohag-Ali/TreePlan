@@ -7,17 +7,17 @@ import Loading from "../Components/Loading";
 import useHooks from "../Hooks/useHooks";
 
 const Books = () => {
-        const { apps, loading } = useHooks();
+        const { trees, loading } = useHooks();
 //   const skillData = useLoaderData();
 
 
   const [search, setSearch] = useState("");
   const term = search.trim().toLowerCase();
   const searchbook = term
-    ? apps.filter((app) => app.skillName.toLowerCase().includes(term))
-    : apps;
+    ? trees.filter((tree) => tree.skillName.toLowerCase().includes(term))
+    : trees;
 if (loading) return <Loading></Loading>
-    if (!apps) return <NotFound></NotFound>
+    if (!trees) return <NotFound></NotFound>
     
   return (
     <div>
@@ -53,8 +53,8 @@ if (loading) return <Loading></Loading>
         {
           //  skillData.map(skill => <TreeCard key={skill.skillId} skill={skill}></TreeCard>)
           searchbook.length > 0 ? (
-          searchbook.map((skill) => (
-            <TreeCard key={skill.skillId} skill={skill} />
+          searchbook.map((t) => (
+            <TreeCard key={t.plantId} tree={t} />
           ))
         ) : (
             <p className="col-span-full text-center text-gray-400">

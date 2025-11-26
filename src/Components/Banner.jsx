@@ -9,44 +9,45 @@ import "swiper/css/navigation";
 const Banner = () => {
   const slides = [
   {
-    img: "https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=1400&q=80",
-    title: "Discover Your Next Favorite Book",
-    text: "From timeless classics to trending bestsellers — explore stories that stay with you."
+    img: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1400&q=80",
+    title: "Bring Nature Into Your Home",
+    text: "Beautiful indoor plants that refresh your space and uplift your mood."
   },
   {
-    img: "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1400&q=80",
-    title: "A World of Knowledge in Your Hands",
-    text: "Find books that inspire, teach, and transform your perspective."
+    img: "https://potsforplants.ph/cdn/shop/products/yucca-plant-649302.jpg?v=1748253894",
+    title: "Air-Purifying Greenery",
+    text: "Snake plants, ZZ plants, and more to help clean your indoor air naturally."
   },
   {
-    img: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1400&q=80",
-    title: "Build Your Personal Library",
-    text: "Collect books that define your journey — one chapter at a time."
+    img: "https://www.thespruce.com/thmb/ZZgnRKHyClJ0iH0hMXE154Skyhs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/get-to-know-the-feng-shui-money-plant-1275013-6-a11a86b1c5664f28a1848a5089b8aaed.jpg",
+    title: "Blooming Beauty",
+    text: "Flowering plants that add color, fragrance, and charm to any corner."
   },
   {
-    img: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&w=1400&q=80",
-    title: "Stories That Stay With You",
-    text: "Immerse yourself in worlds of fiction, fantasy, and unforgettable characters."
+    img: "https://www.realsimple.com/thmb/hKmZA2j9Tf5x6HHjPfqtZMiFr8s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1357717927-33a98b53f0604c09b6679bd3cfac23a4.jpg",
+    title: "Grow Your Urban Jungle",
+    text: "Transform your home with stunning palms and large indoor trees."
   },
   {
-    img: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1400&q=80",
-    title: "Books for Every Curiosity",
-    text: "Self-help, mystery, romance, science — explore every genre you love."
+    img: "https://cnr.ncsu.edu/news/wp-content/uploads/sites/10/2023/06/06132023-tree-planting-istock-twitter.png",
+    title: "Bring Life to Every Space",
+    text: "Decorative plants that enhance your room’s aesthetics instantly."
   },
   {
-    img: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1400&q=80",
-    title: "Learn Something New Every Day",
-    text: "Grow your knowledge with insightful non-fiction and educational reads."
+    img: "https://hips.hearstapps.com/hmg-prod/images/money-tree-plant-royalty-free-image-1726508639.jpg?crop=0.88896xw:1xh;center,top&resize=1200:*",
+    title: "Perfect Plants for Beginners",
+    text: "Easy-care plants that thrive with minimal watering and sunlight."
   },
   {
-    img: "https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=1400&q=80",
-    title: "Dive Into Thrilling Adventures",
-    text: "Mystery, thriller, and suspense novels that keep you turning pages."
+    img: "https://cloudfrontgharpediabucket.gharpedia.com/uploads/2023/01/Weeping-Fig-Ficus-Benjamina-12-1408030001-819x1024.jpg",
+    title: "Vibrant Indoor Greens",
+    text: "Climbers and vining plants that bring natural elegance to your decor."
   }
 ];
 
+
   return (
-    <section className="w-full h-[85vh] relative">
+    <section className="w-full  relative">
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
         spaceBetween={30}

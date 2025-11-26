@@ -7,7 +7,7 @@ const Providers = () => {
     const provider = useLoaderData();
     return (
         <div>
-            <h1 className='font-bold text-2xl my-5'>Top Authors of the Month</h1>
+            <h1 className='font-bold text-2xl my-5'>Meet Our Green Experts</h1>
             <hr  className='mb-5'/>
             <div>
 

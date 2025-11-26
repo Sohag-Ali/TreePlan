@@ -49,3 +49,6 @@ a.active {
     typing 2s steps(12, end) forwards, /* type letters */
     blink-caret 0.75s step-end infinite; /* blinking cursor */
 }
+body {
+  background-color: #f0fdf4; /* Tailwind bg-green-50 এর hex */
+}

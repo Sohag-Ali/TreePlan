@@ -11,8 +11,8 @@ import Navbar from "../Components/NavBar";
 const Details = () => {
 
     const { id } = useParams();
-    const skills = useLoaderData();
-    const [skill, setSkill] = useState(null);
+    const trees = useLoaderData();
+    const [tree, setTree] = useState(null);
     const [showForm, setShowForm] = useState(false);
     const [formData, setFormData] = useState({
         name: "",
@@ -26,14 +26,14 @@ const Details = () => {
     }, []);
 
     useEffect(() => {
-        const selected = skills.find((s) => parseInt(s.skillId) === parseInt(id));
-        setSkill(selected);
-    }, [id, skills]);
+        const selected = trees.find((s) => parseInt(s.plantId) === parseInt(id));
+        setTree(selected);
+    }, [id, trees]);
 
-    if (!skill) {
+    if (!tree) {
         return (
             <div className="text-center text-lg mt-20 text-gray-600 animate-pulse">
-                Loading skill details...
+                Loading Tree details...
             </div>
         );
     }
@@ -61,7 +61,7 @@ const Details = () => {
             <section
                 className="relative w-full h-[400px] flex flex-col items-center justify-center text-center text-white overflow-hidden"
                 style={{
-                    backgroundImage: `url(${skill.image})`,
+                    backgroundImage: `url(${tree.image})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}
@@ -69,10 +69,10 @@ const Details = () => {
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent"></div>
                 <div className="relative z-10" data-aos="zoom-in">
                     <h1 className="text-4xl md:text-5xl font-bold drop-shadow-lg">
-                        {skill.skillName}
+                        {tree.plantName}
                     </h1>
                     <p className="text-lg mt-2 font-light">
-                        Taught by <span className="font-semibold">{skill.providerName}</span>
+                        Taught by <span className="font-semibold">{tree.providerName}</span>
                     </p>
                 </div>
             </section>
@@ -85,14 +85,15 @@ const Details = () => {
                 >
                     {/* Skill Info */}
                     <div className="flex-1 space-y-5">
-                        <h2 className="text-3xl font-semibold text-gray-900">{skill.skillName}</h2>
-                        <p className="text-gray-700 leading-relaxed">{skill.description}</p>
+                        <h2 className="text-3xl font-semibold text-gray-900">{tree.plantName}</h2>
+                        <p className="text-gray-700 leading-relaxed">{tree.description}</p>
 
                         <div className="flex items-center flex-wrap gap-5 mt-6">
-                            <p className="text-lg text-indigo-600 font-semibold">💰 ${skill.price}</p>
-                            <p className="text-lg text-yellow-500 font-semibold">⭐ {skill.rating}</p>
-                            <p className="text-lg text-gray-600 font-semibold">🪑 {skill.slotsAvailable} slots</p>
-                            <p className="text-lg text-gray-600 font-semibold">📧 {skill.providerEmail}</p>
+                            <p className="text-lg text-indigo-600 font-semibold">💰 ${tree.price}</p>
+                            <p className="text-lg text-yellow-500 font-semibold">⭐ {tree.rating}</p>
+                            <p className="text-lg text-gray-600 font-semibold">🪑 {tree.availableStock} stock</p>
+                            <p className="text-lg text-gray-600 font-semibold"> {tree.providerName}</p>
+                            <p className="text-lg text-gray-600 font-semibold">📧 {tree.providerEmail}</p>
                         </div>
 
                         <div className="mt-8 flex gap-4">
@@ -101,7 +102,7 @@ const Details = () => {
                                     onClick={() => setShowForm(true)}
                                     className="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition shadow-md"
                                 >
-                                    Book This Skill
+                                    Book This Tree
                                 </button>
                             ) : (
                                 <button

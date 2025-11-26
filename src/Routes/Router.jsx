@@ -9,6 +9,8 @@ import Profile from "../Page/Profile";
 import PrivateRoute from "../Provider/PrivateRoute";
 import Loading from "../Components/Loading";
 import Books from "../Page/Books";
+import Tips from "../Page/Tips";
+
 
 
 const router = createBrowserRouter([
@@ -19,15 +21,19 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: () => fetch('/skill.JSON'),
+                loader: () => fetch('/data.JSON'),
                  hydrateFallbackElement: <Loading></Loading>,
                 children: [
+                    // {
+                    //     path: '/tip',
+                    //     element: <Tips></Tips>
+                    // },
                     {
                         path: '/',
                         element: <Providers></Providers>,
                         loader: () => fetch('/providers.JSON'),
                         hydrateFallbackElement: <Loading></Loading>,
-                    }
+                    },
                 ]
             },
             {
@@ -36,13 +42,13 @@ const router = createBrowserRouter([
             <Details></Details>
         </PrivateRoute>,
         loader: async () => {
-    const res = await fetch('/skill.JSON');  
+    const res = await fetch('/data.JSON');  
     const data = await res.json();          
     return data;                            
   },
     },
      {
-        path: '/book',
+        path: '/plants',
         element: <Books></Books>,
         //  loader: () => fetch('/skill.JSON'),
         //  hydrateFallbackElement: <Loading></Loading>,

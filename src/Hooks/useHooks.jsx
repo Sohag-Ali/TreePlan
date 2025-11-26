@@ -2,15 +2,15 @@ import React from 'react';
 import axios from "axios";
 import { useEffect, useState } from "react"
 const useHooks = () => {
-    const [apps, setApps] = useState([]);
+    const [trees, setTrees] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     useEffect(()=>{
         setLoading(true);
-        axios('../skill.JSON').then(data => setApps(data.data)).catch(err => setError(err)).finally(()=> setLoading(false))
+        axios('../data.JSON').then(data => setTrees(data.data)).catch(err => setError(err)).finally(()=> setLoading(false))
     },[])
 
-    return {apps, loading, error};
+    return {trees, loading, error};
 };
 
 export default useHooks;
