@@ -15,14 +15,14 @@ const Login = () => {
   const [show, setShow] = useState(false);
   const { signInUser, user, setUser, signInWithGoogle, resetPass } =
     use(AuthContext);
-  console.log(user);
+//   console.log(user);
   const location = useLocation();
   // console.log(location);
   const handleLogin = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    console.log(email, password);
+    // console.log(email, password);
     signInUser(email, password)
       .then((result) => {
         setUser(result.user);
@@ -44,7 +44,7 @@ const Login = () => {
         toast("Login succesful");
       })
       .catch((error) => {
-        console.log("error found from google Sign In", error);
+        toast.error("error found from google Sign In", error);
       });
   };
 

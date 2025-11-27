@@ -14,7 +14,7 @@ const Register = () => {
   const [show,setShow] = useState(false);
   const { createUser, user, setUser, updateUser, signInWithGoogle } =
     use(AuthContext);
-  console.log(user);
+  // console.log(user);
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -67,6 +67,7 @@ const Register = () => {
       })
       .catch((error) => {
         console.log("error found from google Sign In", error);
+        toast("error found from google Sign In");
       });
   };
 
