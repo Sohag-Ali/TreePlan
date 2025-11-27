@@ -42,7 +42,7 @@ const TreeCard = ({tree}) => {
                 </div>
 
                 {/* View Details Button */}
-                <NavLink to={`/skillDetails/${tree.plantId}`} className="mt-auto bg-gradient-to-r from-green-300 to-emerald-400 text-white  px-4 py-2 rounded hover:bg-gradient-to-r hover:from-green-400 hover:to-emerald-500
+                <NavLink to={`/Details/${tree.plantId}`} className="mt-auto bg-gradient-to-r from-green-300 to-emerald-400 text-white  px-4 py-2 rounded hover:bg-gradient-to-r hover:from-green-400 hover:to-emerald-500
            hover:scale-105 transition-all duration-300">
                     View Details
                 </NavLink>

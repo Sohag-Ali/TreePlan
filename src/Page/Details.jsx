@@ -78,18 +78,18 @@ const Details = () => {
             </section>
 
             {/* ✅ Main Content */}
-            <main className="flex-grow py-12 px-6 md:px-20">
+            <main className="flex-grow py-12 px-6 md:px-20 bg-green-50 ">
                 <div
-                    className="bg-white/90 backdrop-blur-lg rounded-2xl shadow-xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-10"
-                    data-aos="fade-up"
+                    className="bg-white/90 backdrop-blur-lg rounded-2xl shadow-xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 hover:scale-105 transition-all duration-300"
+                    data-aos="fade-up "
                 >
                     {/* Skill Info */}
-                    <div className="flex-1 space-y-5">
+                    <div className="flex-1 space-y-5 ">
                         <h2 className="text-3xl font-semibold text-gray-900">{tree.plantName}</h2>
                         <p className="text-gray-700 leading-relaxed">{tree.description}</p>
 
                         <div className="flex items-center flex-wrap gap-5 mt-6">
-                            <p className="text-lg text-indigo-600 font-semibold">💰 ${tree.price}</p>
+                            <p className="text-lg text-green-600 font-semibold">💰 ${tree.price}</p>
                             <p className="text-lg text-yellow-500 font-semibold">⭐ {tree.rating}</p>
                             <p className="text-lg text-gray-600 font-semibold">🪑 {tree.availableStock} stock</p>
                             <p className="text-lg text-gray-600 font-semibold"> {tree.providerName}</p>
@@ -137,7 +137,7 @@ const Details = () => {
                                 <Line
                                     type="monotone"
                                     dataKey="students"
-                                    stroke="#6366F1"
+                                    stroke="green"
                                     strokeWidth={3}
                                     dot={{ r: 5 }}
                                 />

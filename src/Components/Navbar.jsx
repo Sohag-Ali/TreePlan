@@ -1,14 +1,18 @@
 import React, { use, useState } from "react";
 import userIcon from "../assets/user.png";
-import { Link, NavLink } from "react-router";
+import { Link, Navigate, NavLink, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
 import MyLink from "./MyLink";
+import { toast, ToastContainer } from "react-toastify";
 
 const Navbar = () => {
   const { user, setUser, logOut } = use(AuthContext);
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const handleLogOut = () => {
     logOut().then((result) => setUser(result.user));
+    navigate('/')
+    toast('LogOut succesful');
   };
   return (
     <div className="bg-gradient-to-r from-green-50 to-green-100">
@@ -175,6 +179,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+       <ToastContainer position="top-center" />
     </div>
   );
 };

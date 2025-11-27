@@ -4,9 +4,11 @@ import { Outlet, useLoaderData, useNavigate } from 'react-router-dom';
 import TreeCard from './TreeCard';
 import Banner from '../Components/Banner';
 import Tips from './Tips';
+import { useNavigation } from 'react-router';
 
 
 const Home = () => {
+    const {state}= useNavigation();
     const navigate = useNavigate();
         const treeData = useLoaderData();
         const popularData = treeData.slice(0,9);
@@ -15,8 +17,10 @@ const Home = () => {
              <div className='my-3' data-aos='zoom-in' data-aos-delay="200" >
                        <Banner></Banner>
                     </div>
-            <h1 className='font-bold text-3xl my-3 mt-8'>Top Rated Indoor Plants</h1>
+            <div>
+                <h1 className='font-bold text-3xl my-3 mt-8'>Top Rated Indoor Plants</h1>
             <hr  className='mb-5'/>
+            </div>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5'>
                 {
                     
@@ -29,7 +33,7 @@ const Home = () => {
                     <Tips></Tips>
                 </div>
             <div>
-                <Outlet></Outlet>
+                {state=="loading"? <Loading/> : <Outlet></Outlet> }
             </div>
         </div>
     );

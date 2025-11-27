@@ -3,9 +3,20 @@ import Navbar from "../Components/Navbar";
 import userIcon from "../assets/user.png";
 import { AuthContext } from "../Provider/AuthProvider";
 import { toast, ToastContainer } from "react-toastify";
+import { useNavigate } from "react-router";
+
+
+
 
 const Profile = () => {
-  const { user, logOut } = use(AuthContext);
+  const { user, logOut,setUser } = use(AuthContext);
+   const navigate = useNavigate();
+
+  const handleLogOut = () => {
+    logOut().then((result) => setUser(result.user));
+    navigate('/')
+    toast('LogOut succesful');
+  };
   return (
    <div className="min-h-screen bg-gradient-to-b from-green-50 to-green-100 flex flex-col items-center pt-20 px-4">
 
@@ -71,7 +82,7 @@ const Profile = () => {
 
       {/* Logout */}
       <button
-        onClick={logOut}
+        onClick={handleLogOut}
         className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 
                  text-white py-2.5 rounded-lg font-semibold shadow-md transition"
       >

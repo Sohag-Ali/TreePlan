@@ -52,3 +52,14 @@ a.active {
 body {
   background-color: #f0fdf4; /* Tailwind bg-green-50 এর hex */
 }
+
+/* Swiper Navigation Arrow Colors */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #04bd82 !important; /* emerald-600 */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #047857 !important; /* emerald-700 */
+}

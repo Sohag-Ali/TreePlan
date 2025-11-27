@@ -41,21 +41,20 @@ const router = createBrowserRouter([
                 ]
             },
             {
-        path: '/skillDetails/:id',
+        path: '/Details/:id',
         element: <PrivateRoute>
             <Details></Details>
         </PrivateRoute>,
         loader: async () => {
     const res = await fetch('/data.JSON');  
     const data = await res.json();          
-    return data;                            
+    return data;   
+                             
   },
     },
      {
         path: '/plants',
         element: <Books></Books>,
-        //  loader: () => fetch('/skill.JSON'),
-        //  hydrateFallbackElement: <Loading></Loading>,
     },
      
     {
