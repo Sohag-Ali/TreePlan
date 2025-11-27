@@ -95,31 +95,41 @@ const Details = () => {
                             <p className="text-lg text-gray-600 font-semibold"> {tree.providerName}</p>
                             <p className="text-lg text-gray-600 font-semibold">📧 {tree.providerEmail}</p>
                         </div>
+<div className="mt-8 flex flex-col sm:flex-row gap-4">
 
-                        <div className="mt-8 flex gap-4">
-                            {!showForm ? (
-                                <button
-                                    onClick={() => setShowForm(true)}
-                                    className='overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl cursor-pointer btn my-6 md:my-8 bg-gradient-to-r from-green-500 to-emerald-600 text-white border-none w-full sm:w-auto px-8'
-                                >
-                                    Book This Tree
-                                </button>
-                            ) : (
-                                <button
-                                    onClick={() => setShowForm(false)}
-                                    className='overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl cursor-pointer btn my-6 md:my-8 bg-gradient-to-r from-green-500 to-emerald-600 text-white border-none w-full sm:w-auto px-8'
-                                >
-                                    Cancel
-                                </button>
-                            )}
+  {!showForm ? (
+    <button
+      onClick={() => setShowForm(true)}
+      className="overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl 
+                 cursor-pointer btn my-4 sm:my-6 md:my-8 
+                 bg-gradient-to-r from-green-500 to-emerald-600 text-white border-none 
+                 w-full sm:w-auto px-8"
+    >
+      Book This Tree
+    </button>
+  ) : (
+    <button
+      onClick={() => setShowForm(false)}
+      className="overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl 
+                 cursor-pointer btn my-4 sm:my-6 md:my-8 
+                 bg-gradient-to-r from-green-500 to-emerald-600 text-white border-none 
+                 w-full sm:w-auto px-8"
+    >
+      Cancel
+    </button>
+  )}
 
-                            <Link
-                                to="/"
-                                className='overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl cursor-pointer btn my-6 md:my-8 bg-gradient-to-r from-green-500 to-emerald-600 text-white border-none w-full sm:w-auto px-8'
-                            >
-                                Back to Home
-                            </Link>
-                        </div>
+  <Link
+    to="/"
+    className="overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl 
+               cursor-pointer btn my-4 sm:my-6 md:my-8 
+               bg-gradient-to-r from-green-500 to-emerald-600 text-white border-none 
+               w-full sm:w-auto px-8"
+  >
+    Back to Home
+  </Link>
+</div>
+
                     </div>
 
                     {/* Analytics Chart */}
