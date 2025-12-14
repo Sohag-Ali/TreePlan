@@ -14,7 +14,7 @@ const Register = () => {
   const [show,setShow] = useState(false);
   const { createUser, user, setUser, updateUser, signInWithGoogle } =
     use(AuthContext);
-  // console.log(user);
+  // console.og(user);
 
   const handleRegister = (e) => {
     e.preventDefault();

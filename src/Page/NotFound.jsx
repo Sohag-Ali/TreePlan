@@ -1,7 +1,7 @@
 import React from "react";
 import notFound from "../assets/App-Error.png";
 import { useNavigate } from "react-router";
-
+//n
 const NotFound = () => {
   const navigate = useNavigate();
   return (

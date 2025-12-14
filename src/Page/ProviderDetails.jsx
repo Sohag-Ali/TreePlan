@@ -22,7 +22,7 @@ const ProviderDetails = ({ prov }) => {
                 {prov.topSkills.join(", ")}
             </p>
 
-            {/* Rating */}
+            {/* Rting */}
             <p className="text-yellow-500 text-sm mt-1">
                 {"⭐".repeat(Math.floor(prov.rating))}{" "}
                 <span className="text-gray-600">({prov.rating.toFixed(1)})</span>

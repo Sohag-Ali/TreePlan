@@ -10,7 +10,7 @@ const Contact = () => {
     return (
         
         <div className="min-h-screen bg-gradient-to-b from-green-50 to-green-100 px-6 ">
-      {/* Heading */}
+      {/* Heding */}
           <div><Navbar></Navbar></div>
       <div className="max-w-3xl mx-auto text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-emerald-700">

@@ -6,7 +6,7 @@ import Banner from '../Components/Banner';
 import Tips from './Tips';
 import { useNavigation } from 'react-router';
 
-
+//home
 const Home = () => {
     const {state}= useNavigation();
     const navigate = useNavigate();
