@@ -7,7 +7,7 @@ import useHooks from "../Hooks/useHooks";
 
 const Books = () => {
         const { trees, loading } = useHooks();
-//   const skillData = useLoaderData();
+//   cont skillData = useLoaderData();
 
 
   const [search, setSearch] = useState("");

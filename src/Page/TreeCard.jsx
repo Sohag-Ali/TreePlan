@@ -37,7 +37,7 @@ const TreeCard = ({tree}) => {
                         <span className="text-gray-600">{tree.rating.toFixed(1)}</span>
                     </div>
 
-                    {/* Price */}
+                    {/* Pric */}
                     <p className="text-gray-700 font-bold text-xl">${tree.price}</p>
                 </div>
 

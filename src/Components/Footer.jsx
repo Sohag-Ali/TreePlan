@@ -85,7 +85,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom bar */}
+        {/* Bottom ar */}
         <div className="border-t border-emerald-100 mt-8 pt-4 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-gray-500">
           <p>© 2025 GreenNest. All rights reserved.</p>
           <p>Made with 🌱 for plant lovers.</p>

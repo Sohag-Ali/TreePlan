@@ -77,7 +77,7 @@ const Details = () => {
                 </div>
             </section>
 
-            {/* ✅ Main Content */}
+            {/* ✅ Main Conten */}
             <main className="flex-grow py-12 px-6 md:px-20 bg-green-50 ">
                 <div
                     className="bg-white/90 backdrop-blur-lg rounded-2xl shadow-xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 hover:scale-105 transition-all duration-300"

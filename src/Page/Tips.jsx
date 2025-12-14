@@ -39,5 +39,5 @@ const Tips = () => {
     </section>
     );
 };
-
+//ggggg
 export default Tips;

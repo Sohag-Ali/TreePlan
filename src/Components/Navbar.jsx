@@ -18,7 +18,7 @@ const Navbar = () => {
     <div className="bg-gradient-to-r from-green-50 to-green-100">
       <nav className="max-w-6xl mx-auto flex items-center justify-between backdrop-blur-2xl rounded-2xl p-5">
         
-        {/* Logo */}
+        {/* Log */}
         <div>
           <Link to="/">
             <h1 className="text-emerald-600 font-bold text-3xl typing-text ">

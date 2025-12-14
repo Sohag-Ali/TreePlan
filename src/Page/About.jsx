@@ -6,7 +6,7 @@ const About = () => {
         <div className="min-h-screen bg-gradient-to-b from-green-50 to-green-100 px-6 pb-16">
             <div><Navbar></Navbar></div>
 
-      {/* Top Heading */}
+      {/* Top Headng */}
       <div className="max-w-4xl mx-auto text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-emerald-700">
           About <span className="text-green-600">GreenNest</span>

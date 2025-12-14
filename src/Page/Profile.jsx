@@ -22,7 +22,7 @@ const Profile = () => {
 
   <div className="bg-white w-full max-w-md shadow-xl rounded-3xl p-7 border border-emerald-200">
 
-    {/* Top Badge */}
+    {/* To Badge */}
     <div className="flex justify-center mb-4">
       <span className="px-4 py-1 bg-emerald-100 text-emerald-600 text-sm font-semibold rounded-full">
         🌿 GreenNest Member

@@ -65,7 +65,7 @@ const Login = () => {
   return (
     <div>
       {/* <div>
-                <Navbar></Navbar>
+                <Navbar></Nvbar>
             </div> */}
       <div className="min-h-screen flex items-center justify-center bg-green-100 px-4">
         <div className="bg-white rounded-lg shadow-md p-8 w-full max-w-sm shadow-md rounded-xl border border-emerald-100">
